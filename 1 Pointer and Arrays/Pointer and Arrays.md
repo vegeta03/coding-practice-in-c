@@ -21,7 +21,7 @@
 
 ### What is a Pointer
 
-- A pointer is a special variable. Regular variables store integers, floats, characters etc... in C. A pointer however stores *an address* in memory.
+- A pointer is a special variable. Regular variables store integers, floats, characters etc... in C. A pointer however stores _an address_ in memory.
 - We can say that a pointer "points to" an address in memory.
 
 ### How do we set up `radiusPtr` to point to `radius`
@@ -34,10 +34,11 @@
 
 - Pointers can point to any type of variable. integer, char, boolean, float etc
 - The types of pointers depend on what pointers point to:
-  - pointer to integer(int* intptr)
-  - pointer to char(char* charptr)
-  - pointer to float(float* floatptr)
-  
+
+  - pointer to integer(int\* intptr)
+  - pointer to char(char\* charptr)
+  - pointer to float(float\* floatptr)
+
 ### If the pointer is just an address why does it need a type
 
 ### Arent all addresses the same type, just addresses
@@ -48,7 +49,7 @@
   - integer: 4bytes
   - float: 4bytes
   - char: 1byte
-- Pointers need to know what type they point to so we can do something interesting called *pointer arithmetic*.
+- Pointers need to know what type they point to so we can do something interesting called _pointer arithmetic_.
 - Every data-type available in C, can have a corresponding pointer type which points to the address which holds a value of that data type.
 - `int radius = 25;` initialized a integer variable radius with value 25.
 - `int *radiusPtr = &radius;` initialized a pointer variable radiusPtr with address of variable radius.
