@@ -59,3 +59,38 @@
 - `int r = *radiusPtr;`
 - `*radiusPtr` access the value pointed to by the pointer i.e. access 25.
 - The variable `r` is a new variable in a new memory location holding the value 25 that is assigned to it.
+
+## Pointer problem and Arrays
+
+- Arrays in C are actually pointers.
+- `int arr[4] = {1, 2, 3, 4};`
+- The way to access individual elements in the array is via indexes: `arr[0]`....`arr[3]`.
+- Array elements are stored in contiguous memory location.
+- Array variables are simply pointers.
+- `arr` is a pointer to an integer and it points to the address location of the very first element in the integer array.
+- The type of array variable `arr` is `int*`.
+- `int *intptr = arr;`
+- Let say we perform the increment operation on the variable intptr i.e. we call `intptr++;`
+
+### What does `intptr++;` do
+
+- This performs *pointer arithmetic*.
+- Moves the pointer to the next position in the array i.e. it points to `arr[1]`.
+- If you know:
+  - The address of the very first element of the array.
+  - How much space each element occupies(i.e. data-type of element).
+- You can can calculate the address of the remaining elements of the array.
+- We can do `*(arr + 1)` to access the second index value and so on.
+  
+### String in C.
+
+- A string in C is just a `char*` - An array of characters.
+- `char* str = "Hello World.";`
+- In memory a string looks like a char array terminated by `'\0'`.
+- `printf("%s", str);` this prints a string to screen.
+- `*str` access the first element of a string which is the character "H" in the example.
+- Successive elements can be accessed using `*(str + 1)`, `*(str + 2)` etc, They can also be accessed using `str[1]`, `str[2]` etc.
+  
+## Pointer problems
+
+- 
