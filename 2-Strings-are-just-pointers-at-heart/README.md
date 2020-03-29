@@ -16,3 +16,10 @@
 
 - `const char*`
   - This indicates that the pointer is to a constant `char` which means the string it is pointing to cannot be changed. Operations such as `str[0]="P";` is not valid.
+
+### `char* strchr(const char* str, int c)`
+
+- A function to check for a character in a string.
+- This returns a pointer to where the character c is present in the string `str`.
+- Characters are integers at heart, `int c` is just the ASCII code for the character and can be tested for equality with characters.
+- The functions should handle `NULL`s and return `NULL` if the character is not found in the string.
