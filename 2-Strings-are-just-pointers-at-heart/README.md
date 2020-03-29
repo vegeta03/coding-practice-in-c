@@ -23,3 +23,12 @@
 - This returns a pointer to where the character c is present in the string `str`.
 - Characters are integers at heart, `int c` is just the ASCII code for the character and can be tested for equality with characters.
 - The functions should handle `NULL`s and return `NULL` if the character is not found in the string.
+
+## Pointer as arguments to functions
+
+- Changes within a function may or may not reflect in the calling code. It depends on what the change is.
+- There are 2 operations that you can do on pointers in a function:
+  - modification of the pointer value.
+    - reflects in the calling code.
+  - reassignment oa pointer.
+    - does not reflect in the calling code.
