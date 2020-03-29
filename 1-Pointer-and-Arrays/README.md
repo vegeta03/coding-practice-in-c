@@ -90,7 +90,3 @@
 - `printf("%s", str);` this prints a string to screen.
 - `*str` access the first element of a string which is the character "H" in the example.
 - Successive elements can be accessed using `*(str + 1)`, `*(str + 2)` etc, They can also be accessed using `str[1]`, `str[2]` etc.
-  
-## Pointer problems
-
-- 
