@@ -23,6 +23,7 @@ size_t my_strlen(const char *str)
 int main()
 {
     printf("%d\n", my_strlen("Shyam"));
+    printf("%d\n", strlen("Shyam"));
 
     return 0;
 }
